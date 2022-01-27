@@ -233,10 +233,10 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  upper= letra.toUpperCase
-  if(upper == 'A' || upper == 'E' || upper == 'I' || upper = 'O' || upper == 'U'){
+  upper= letra.toUpperCase();
+  if(upper === 'A' || upper === 'E' || upper === 'I' || upper === 'O' || upper === 'U'){
     return "Es vocal";
-  } else return "Dato incorrecto";
+  } else {return "Dato incorrecto";}
   
 }
 
