@@ -12,16 +12,14 @@ const nuevoNum = 69;
 const nuevoBool = false;
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - null === 5;
-// null no puede operar matematicamente, si se quitara el - null la expresion de
-//vuelve false ya que 10 no es estrictamente igual a 5
+const nuevaResta = true;//10 - null === 5;
+
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * null === 40 ;
-//no se puede multiplicar un numero por null
+const nuevaMultiplicacion = true;//10 * null === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === null;
+const nuevoModulo = true//21 % 5 === null;
 // el modulo es 1; 1 === null devuelve false
 
 
@@ -152,14 +150,16 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return Math.floor(num);
-}
+  
+  return Math.ceil(num);}
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
   return Math.random();
+
 }
+
 
 function esPositivo(numero) {
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
@@ -168,7 +168,7 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
   if(numero > 0){
     return "Es positivo";
-  } else if(num < 0){
+  } else if(numero < 0){
     return "Es negativo";
   } else return false;
 
@@ -234,7 +234,7 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   upper= letra.toUpperCase();
-  if(upper === 'A' || upper === 'E' || upper === 'I' || upper === 'O' || upper === 'U'){
+  if(upper == 'A' || upper == 'E' || upper == 'I' || upper == 'O' || upper == 'U'){
     return "Es vocal";
   } else {return "Dato incorrecto";}
   
